@@ -6,7 +6,7 @@
 
 https://www.nuget.org/packages/Microsoft.Windows.Compatibility
 
-### プラットフォームをWindowsに限定する方法
+### 対応プラットフォームをWindows7以降に限定する
 
 「AssemblyInfo.cs」に下記を追加
-> [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("windows")]
+> [assembly: System.Runtime.Versioning.SupportedOSPlatform("windows7.0")]
