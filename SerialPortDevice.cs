@@ -39,37 +39,37 @@ namespace SerialPort_GetDeviceName_for_windows
             DevicesProperty = ConvertDevicesProperty(deviceName, comNumber);
         }
 
-        private static DeviceProperties[] ConvertDevicesProperty(List<string> deviceName, List<string> comNo)
+        private static DeviceProperties[] ConvertDevicesProperty(List<string> deviceName, List<string> comNumber)
         {
             DeviceProperties[] deviceProperties = new DeviceProperties[0];
 
-            if(deviceName != null && comNo != null)
+            if(deviceName != null && comNumber != null)
             {
-                for(int i = 0; i < comNo.Count; i++)
+                for(int x = 0; x < comNumber.Count; x++)
                 {
-                    for(int x = i + 1; x < comNo.Count; x++)
+                    for(int y = x + 1; y < comNumber.Count; y++)
                     {
-                        int a = int.Parse(comNo[i].Substring(3));
-                        int b = int.Parse(comNo[x].Substring(3));
+                        int a = int.Parse(comNumber[x].Substring(3));
+                        int b = int.Parse(comNumber[y].Substring(3));
                         if(a > b)
                         {
-                            string name = deviceName[x];
-                            deviceName.RemoveAt(x);
-                            string com = comNo[x];
-                            comNo.RemoveAt(x);
+                            string name = deviceName[y];
+                            deviceName.RemoveAt(y);
+                            string com = comNumber[y];
+                            comNumber.RemoveAt(y);
 
-                            deviceName.Insert(i, name);
-                            com.Insert(i, com);
+                            deviceName.Insert(x, name);
+                            comNumber.Insert(x, com);
                         }
                     }
                 }
 
-                if(comNo.Count > 0)
+                if(comNumber.Count > 0)
                 {
-                    deviceProperties = new DeviceProperties[comNo.Count];
-                    for(int i = 0; i < comNo.Count; i++)
+                    deviceProperties = new DeviceProperties[comNumber.Count];
+                    for(int i = 0; i < comNumber.Count; i++)
                     {
-                        deviceProperties[i] = new DeviceProperties(deviceName[i], comNo[i]);
+                        deviceProperties[i] = new DeviceProperties(deviceName[i], comNumber[i]);
                     }
                 }
             }
