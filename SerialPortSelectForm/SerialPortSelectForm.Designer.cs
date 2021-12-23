@@ -54,7 +54,7 @@ namespace SerialPortSelectForm
             // 
             this.combox_PortName.FormattingEnabled = true;
             this.combox_PortName.Location = new System.Drawing.Point(90, 15);
-            this.combox_PortName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.combox_PortName.Margin = new System.Windows.Forms.Padding(4);
             this.combox_PortName.Name = "combox_PortName";
             this.combox_PortName.Size = new System.Drawing.Size(433, 23);
             this.combox_PortName.TabIndex = 0;
@@ -103,7 +103,7 @@ namespace SerialPortSelectForm
             // 
             this.combox_Baudrate.FormattingEnabled = true;
             this.combox_Baudrate.Location = new System.Drawing.Point(90, 48);
-            this.combox_Baudrate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.combox_Baudrate.Margin = new System.Windows.Forms.Padding(4);
             this.combox_Baudrate.Name = "combox_Baudrate";
             this.combox_Baudrate.Size = new System.Drawing.Size(176, 23);
             this.combox_Baudrate.TabIndex = 5;
@@ -112,7 +112,7 @@ namespace SerialPortSelectForm
             // 
             this.combox_DataBits.FormattingEnabled = true;
             this.combox_DataBits.Location = new System.Drawing.Point(90, 80);
-            this.combox_DataBits.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.combox_DataBits.Margin = new System.Windows.Forms.Padding(4);
             this.combox_DataBits.Name = "combox_DataBits";
             this.combox_DataBits.Size = new System.Drawing.Size(176, 23);
             this.combox_DataBits.TabIndex = 6;
@@ -121,7 +121,7 @@ namespace SerialPortSelectForm
             // 
             this.combox_StopBits.FormattingEnabled = true;
             this.combox_StopBits.Location = new System.Drawing.Point(90, 112);
-            this.combox_StopBits.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.combox_StopBits.Margin = new System.Windows.Forms.Padding(4);
             this.combox_StopBits.Name = "combox_StopBits";
             this.combox_StopBits.Size = new System.Drawing.Size(176, 23);
             this.combox_StopBits.TabIndex = 7;
@@ -130,7 +130,7 @@ namespace SerialPortSelectForm
             // 
             this.combox_Parity.FormattingEnabled = true;
             this.combox_Parity.Location = new System.Drawing.Point(90, 145);
-            this.combox_Parity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.combox_Parity.Margin = new System.Windows.Forms.Padding(4);
             this.combox_Parity.Name = "combox_Parity";
             this.combox_Parity.Size = new System.Drawing.Size(176, 23);
             this.combox_Parity.TabIndex = 8;
@@ -139,7 +139,7 @@ namespace SerialPortSelectForm
             // 
             this.combox_Handshake.FormattingEnabled = true;
             this.combox_Handshake.Location = new System.Drawing.Point(90, 178);
-            this.combox_Handshake.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.combox_Handshake.Margin = new System.Windows.Forms.Padding(4);
             this.combox_Handshake.Name = "combox_Handshake";
             this.combox_Handshake.Size = new System.Drawing.Size(176, 23);
             this.combox_Handshake.TabIndex = 9;
@@ -168,7 +168,7 @@ namespace SerialPortSelectForm
             // 
             this.combox_Encoding.FormattingEnabled = true;
             this.combox_Encoding.Location = new System.Drawing.Point(90, 210);
-            this.combox_Encoding.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.combox_Encoding.Margin = new System.Windows.Forms.Padding(4);
             this.combox_Encoding.Name = "combox_Encoding";
             this.combox_Encoding.Size = new System.Drawing.Size(176, 23);
             this.combox_Encoding.TabIndex = 12;
@@ -188,7 +188,7 @@ namespace SerialPortSelectForm
             this.ckbox_DataTerminalReady.AutoSize = true;
             this.ckbox_DataTerminalReady.BackColor = System.Drawing.SystemColors.Control;
             this.ckbox_DataTerminalReady.Location = new System.Drawing.Point(90, 242);
-            this.ckbox_DataTerminalReady.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ckbox_DataTerminalReady.Margin = new System.Windows.Forms.Padding(4);
             this.ckbox_DataTerminalReady.Name = "ckbox_DataTerminalReady";
             this.ckbox_DataTerminalReady.Size = new System.Drawing.Size(47, 19);
             this.ckbox_DataTerminalReady.TabIndex = 14;
@@ -199,7 +199,7 @@ namespace SerialPortSelectForm
             // 
             this.ckbox_RequestToSend.AutoSize = true;
             this.ckbox_RequestToSend.Location = new System.Drawing.Point(152, 242);
-            this.ckbox_RequestToSend.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ckbox_RequestToSend.Margin = new System.Windows.Forms.Padding(4);
             this.ckbox_RequestToSend.Name = "ckbox_RequestToSend";
             this.ckbox_RequestToSend.Size = new System.Drawing.Size(45, 19);
             this.ckbox_RequestToSend.TabIndex = 15;
@@ -219,7 +219,7 @@ namespace SerialPortSelectForm
             // btn_Ok
             // 
             this.btn_Ok.Location = new System.Drawing.Point(342, 244);
-            this.btn_Ok.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Ok.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Ok.Name = "btn_Ok";
             this.btn_Ok.Size = new System.Drawing.Size(88, 29);
             this.btn_Ok.TabIndex = 17;
@@ -230,7 +230,7 @@ namespace SerialPortSelectForm
             // btn_Cancel
             // 
             this.btn_Cancel.Location = new System.Drawing.Point(436, 244);
-            this.btn_Cancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Cancel.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.Size = new System.Drawing.Size(88, 29);
             this.btn_Cancel.TabIndex = 18;
@@ -262,9 +262,8 @@ namespace SerialPortSelectForm
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.combox_PortName);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SerialPortSelectForm";
-            this.Text = "Form1";
             this.Load += new System.EventHandler(this.SerialPortSelectForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
